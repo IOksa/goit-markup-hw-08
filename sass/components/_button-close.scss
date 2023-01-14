@@ -1,0 +1,33 @@
+/* Button "close" on modal window */
+.button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid var(--modal-button-border);
+
+    @include bordered(50%, var(--secondary-color));
+    // border-radius: 50%;
+    // background-color: var(--secondary-color);
+
+    padding: 0;
+    cursor: pointer;
+
+    color: var(--logo-header-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+    
+    &__icon {
+        fill: currentColor;
+    }
+}
+

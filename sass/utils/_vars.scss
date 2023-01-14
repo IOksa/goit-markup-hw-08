@@ -1,0 +1,52 @@
+/* цвет основного текста #757575; */
+/* цвет заголовков #212121; */
+/* цвет акцента #2196F3; */
+/* цвет лого-header #000000; */
+/* цвет h1 #FFFFFF; */
+/* цвет контактов в футере rgba(255, 255, 255, 0.6); */
+/* цвет фона секции #F5F4FA; */
+/* цвет фона футера #2F303A; */
+/* цвет кнопки на index.html при hover и focus #188CE8 */
+/* цвет back фона hero #C4C4C4; */
+
+/* цвет границы карточки  #EEEEEE;*/
+/* цвет границы header  #ECECEC;*/
+
+/* цвет иконок в неактивном состоянии #AFB1B8 */
+/* цвет иконок футера в неактивном состоянии rgba(255, 255, 255, 0.1); */
+
+/* цвет границы модальной кнопки rgba(0, 0, 0, 0.1); */
+/* цвет backdrop rgba(0, 0, 0, 0.2); */
+
+/*  цвет текста в textarea rgba(117, 117, 117, 0.5);*/
+
+/*  основной шрифт 'Roboto'*/
+/*  шрифт logo 'Raleway'*/
+
+
+:root {
+    --accent-color: #2196F3;
+    --logo-header-color: #000000;
+    --secondary-color: #FFFFFF;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --secondary-background-color: #2F303A;
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
+    --secondary-button-color: #F5F4FA;
+    --button-hover-color: #188CE8;
+    --color-border-card: #EEEEEE;
+    --color-border-header: #ECECEC;
+    --color-hero-background: #C4C4C4;
+    --color-inactive-icon: #AFB1B8;
+    --inactive-icon-footer: rgba(255, 255, 255, 0.1);
+    --modal-button-border: rgba(0, 0, 0, 0.1);
+    --backdrop-background-color: rgba(0, 0, 0, 0.2);
+    --overlay-background-color: rgba(33, 150, 243, 0.9);
+    --textarea-color: rgba(117, 117, 117, 0.5);
+
+
+    --font-main: 'Roboto';
+    --font-logo: 'Raleway';
+    --font-family: sans-serif;
+
+}

@@ -1,0 +1,12 @@
+/* components/_advantages-section.css */
+.advantages{
+    &__list {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    &__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}

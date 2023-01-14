@@ -1,0 +1,12 @@
+@mixin bordered($bradius, $bgcolor) {
+    border-radius: $bradius;
+    background-color: $bgcolor;
+}
+
+@mixin position($position: absolute, $top: 0, $left: 0){
+    position: $position;
+    top: $top;
+    left: $left;
+
+
+}

@@ -1,0 +1,43 @@
+/* components/_advantages-card.css */
+.advantage-card{
+
+    &__icon-fon {
+        padding: 0;
+        border: none;
+        width: 270px;
+        height: 120px;
+
+        @include bordered(4px, var(--secondary-button-color));
+        // border-radius: 4px;
+        // background-color: var(--secondary-button-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    &__header {
+        color: var(--secondary-text-color);
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+
+        text-transform: uppercase;
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+
+    
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+
+}

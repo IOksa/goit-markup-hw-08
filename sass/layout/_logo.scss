@@ -1,0 +1,23 @@
+.logo {
+    color: var(--accent-color);
+    text-decoration: none;
+
+    font-family: var(--font-logo), var(--font-family);
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &__span {
+       color: var(--logo-header-color);
+    
+    }
+
+    &__span--footer {
+        color: var(--secondary-color);
+
+    }
+
+}
+

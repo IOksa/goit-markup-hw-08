@@ -3,26 +3,37 @@
   
         line-height: 1.14;
         font-weight: 700;
+        text-align: center;
 
         text-transform: uppercase;
         color: var(--secondary-color);
 
         margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            
+        }
 
     }
 
 
     &__field {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        justify-content: flex-end;
+        @media screen and (min-width: 1200px){
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
 
+    &__input-thumb{
+        display: flex;
+        justify-content: center;
     }
 
     &__input {
-
-        width: 358px;
+        width: 100%;
+        max-width: 450px;
         height: 50px;
         padding: 15px 0 15px 16px;
 
@@ -38,6 +49,16 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
+
+        margin-bottom: 20px;
+        
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            max-width: 358px;
+            margin-bottom: 0;
+        }
+
+
     }
 
     &__button {
@@ -57,5 +78,9 @@
 
     }
 
+    &__thumb{
+        display: flex;
+        justify-content: center;
+    }
 }
 

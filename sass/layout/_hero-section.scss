@@ -4,26 +4,66 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--color-hero-background);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground.jpg");
-
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    padding: 200px 0;
+    padding: 118px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground-mobile.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground-mobile@2px.jpg");
+    
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground-tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground-tablet@2px.jpg");
+        
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground.jpg");
+        
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroBackground@2px.jpg");
+        
+        }
+    }
+
+  
+    
 
     &__title {
         color: var(--secondary-color);
-
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.6154;
         letter-spacing: 0.06em;
-
+        
         text-align: center;
         text-transform: uppercase;
-
+    
         margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+     
+        
+   
 
 
     }

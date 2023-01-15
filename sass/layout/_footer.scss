@@ -4,23 +4,45 @@
 
     &__logo {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
     }
 
 
     &__thumb {
-        display: flex;
-        // justify-content: space-between;
-        gap: 93px;
-        align-items: baseline;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            // justify-content: space-between;
+            gap: 93px;
+            align-items: baseline;
+        }
+  
 
     }
 
     &__container {
-        display: flex;
-        gap: 93px;
-        align-items: baseline;
 
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            display: flex;
+            gap: 165px;
+            align-items: baseline;
+            margin-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 93px;
+            align-items: baseline;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__social{
+        margin-bottom: 60px;
+        @media  screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -70,14 +70,35 @@
 
 
     &__list {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
 
     }
 
     &__item {
-        flex-basis: calc((100% - 60px) / 3);
+        height: 100%;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 370px;
+            flex-basis: calc((100% - 60px) / 3);
+        }
+        
+    }
+
+    &__item:not(:last-child){
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+
     }
 }
 

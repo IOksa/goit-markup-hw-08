@@ -183,20 +183,34 @@
           <ul class="services__list list">
             <li>
               <div class="services__item">
-                <img src="./images/box1.jpg" alt="Послуга1" width="370" />
+                <img
+                  srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                  src="./images/box1.jpg"
+                  alt="Послуга1"
+                />
                 <p class="services__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li>
               <div class="services__item">
-                <img src="./images/box2.jpg" alt="Послуга2" width="370" />
+                <img
+                  srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg"
+                  alt="Послуга2"
+                  width="370"
+                />
                 <p class="services__text">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="services__item">
-                <img src="./images/box3.jpg" alt="Послуга3" width="370" />
+                <img
+                  srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg"
+                  alt="Послуга3"
+                  width="370"
+                />
                 <p class="services__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -210,7 +224,39 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/idemianenko-270.jpg 1x,
+                    ./images/idemianenko-540.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/idemianenko-354.jpg 1x,
+                    ./images/idemianenko-708.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/idemianenko-450.jpg 1x,
+                    ./images/idemianenko-900.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/idemianenko-270.jpg"
+                  alt="Ігор Дем'яненко"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <img
                 srcset="
                   ./images/idemianenko-270.jpg 270w,
                   ./images/idemianenko-354.jpg 354w,
@@ -221,7 +267,7 @@
                 "
                 src="./images/idemianenko-270.jpg"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+              /> -->
               <div class="team__description">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -261,7 +307,39 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/orepina-270.jpg 1x,
+                    ./images/orepina-540.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/orepina-354.jpg 1x,
+                    ./images/orepina-708.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/orepina-450.jpg 1x,
+                    ./images/orepina-900.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/orepina-270.jpg"
+                  alt="Ольга Рєпіна"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <img
                 srcset="
                   ./images/orepina-270.jpg 270w,
                   ./images/orepina-354.jpg 354w,
@@ -273,7 +351,7 @@
                 src="./images/orepina-270.jpg"
                 alt="Ольга Рєпіна"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+              /> -->
               <div class="team__description">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -313,7 +391,39 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/mtarasov-270.jpg 1x,
+                    ./images/mtarasov-540.jpg  2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/mtarasov-354.jpg 1x,
+                    ./images/mtarasov-708.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mtarasov-450.jpg 1x,
+                    ./images/mtarasov-900.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/mtarasov-270.jpg"
+                  alt="Микола Тарасов"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <img
                 srcset="
                   ./images/mtarasov-270.jpg 270w,
                   ./images/mtarasov-354.jpg 354w,
@@ -325,7 +435,7 @@
                 src="./images/mtarasov-270.jpg"
                 alt="Микола Тарасов"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+              /> -->
               <div class="team__description">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -365,7 +475,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/mermakov-270.jpg 1x,
+                    ./images/mermakov-540.jpg  2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/mermakov-354.jpg 1x,
+                    ./images/mermakov-708.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mermakov-450.jpg 1x,
+                    ./images/mermakov-900.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/mermakov-270.jpg"
+                  alt="Михайло Єрмаков"
+                  loading="lazy"
+                />
+              <!-- <img
                 srcset="
                   ./images/mermakov-270.jpg 270w,
                   ./images/mermakov-354.jpg 354w,
@@ -377,7 +518,7 @@
                 src="./images/mermakov-270.jpg"
                 alt="Михайло Єрмаков"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-              />
+              /> -->
               <div class="team__description">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -701,13 +842,13 @@
 
         <ul class="mobile-menu__address-list list">
           <li class="mobile-menu__address-item">
-            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
-              info@devstudio.com
+            <a href="tel:+380961111111" class="mobile-menu__tel">
+              +38 096 111 11 11
             </a>
           </li>
           <li class="mobile-menu__address-item">
-            <a href="tel:+380961111111" class="mobile-menu__tel">
-              +38 096 111 11 11
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+              info@devstudio.com
             </a>
           </li>
         </ul>

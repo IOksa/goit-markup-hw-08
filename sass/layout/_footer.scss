@@ -22,12 +22,13 @@
 
     &__container {
 
+        margin-bottom: 60px;
         @media screen and (min-width: 768px) {
             justify-content: center;
             display: flex;
             gap: 165px;
             align-items: baseline;
-            margin-bottom: 60px;
+            
         }
         @media screen and (min-width: 1200px) {
             display: flex;
@@ -38,12 +39,6 @@
 
     }
 
-    &__social{
-        margin-bottom: 60px;
-        @media  screen and (min-width: 1200px) {
-            margin-bottom: 0;
-        }
-    }
 }
 
 

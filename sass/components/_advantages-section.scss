@@ -20,7 +20,7 @@
 
     &__item:not(:last-child){
         margin-bottom: 30px;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
     }

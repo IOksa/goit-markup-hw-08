@@ -1617,9 +1617,6 @@ p {
         flex-wrap: wrap;
   }
 }
-.works__item {
-  height: 100%;
-}
 @media screen and (min-width: 768px) {
   .works__item {
     max-width: 354px;
